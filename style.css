@@ -1,0 +1,83 @@
+/* Google Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Container Centering */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Glassmorphism Card */
+.weather-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Input Field */
+input {
+    padding: 12px;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    background: #ff4b5c;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e63946;
+}
+
+/* Weather Result Styling */
+#weatherResult {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Hide Result Initially */
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .weather-card {
+        width: 90%;
+        padding: 20px;
+    }
+}
